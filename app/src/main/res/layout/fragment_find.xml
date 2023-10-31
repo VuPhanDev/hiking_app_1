@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:orientation="vertical"
+    tools:context=".bottomnav.FindFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/finding_you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finding your own hiking"
+                android:textSize="24sp"
+                android:textColor="#202E5C"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/background_find_tab"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_find"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_margin="5dp"
+                    android:textColor="#616161"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    tools:ignore="Autofill,LabelFor,MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_menu_home"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Filters"
+                    android:textColor="#202E5C"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="18sp"
+                    android:gravity="bottom"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Clear filter"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Effort Level"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/base_text"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="16sp"
+                android:gravity="center"
+                />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="15dp"
+                android:minWidth="15dp"
+                android:maxHeight="15dp"
+                android:maxWidth="15dp"
+                android:progress="25"
+                android:splitTrack="false"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@drawable/custom_thumb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Easy"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Medium"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Challenging"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Expert"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/base_text"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="16sp"
+                android:gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="1-4 hours"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="5-16 hours"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="2-5 days"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    />
+
+                <me.tankery.lib.circularseekbar.CircularSeekBar
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    app:cs_circle_color="#E1E1E1"
+                    app:cs_circle_fill="@color/white"
+                    app:cs_circle_progress_color="#25295F"
+                    app:cs_circle_stroke_width="10dp"
+                    app:cs_circle_style="round"
+                    app:cs_circle_x_radius="0dp"
+                    app:cs_circle_y_radius="0dp"
+                    app:cs_disable_pointer="false"
+                    app:cs_disable_progress_glow="true"
+                    app:cs_hide_progress_when_empty="true"
+                    app:cs_lock_enabled="true"
+                    app:cs_maintain_equal_circle="true"
+                    app:cs_max="100"
+                    app:cs_move_outside_circle="false"
+                    app:cs_negative_enabled="false"
+                    app:cs_pointer_alpha_ontouch="5"
+                    app:cs_pointer_angle="0"
+                    app:cs_pointer_color="#586189"
+                    app:cs_pointer_stroke_width="20dp"
+                    app:cs_progress="25"
+                    app:cs_use_custom_radii="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landscope"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/base_text"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="16sp"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3.5"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Forest"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:background="@drawable/background_button"
+                    android:gravity="center"
+                    android:clickable="true"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="City"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:background="@drawable/background_button"
+                    android:gravity="center"
+                    android:clickable="true"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Lake"
+                    android:textColor="#616161"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"
+                    android:background="@drawable/background_button"
+                    android:gravity="center"
+                    android:clickable="true"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

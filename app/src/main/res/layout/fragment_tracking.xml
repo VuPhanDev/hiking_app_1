@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".bottomnav.TrackingFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_background_tracking"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentStart="true"
+                android:layout_margin="15dp"
+                >
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_back"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Tracks"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="5dp"
+                    android:textSize="24sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avt"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_above="@+id/tv_tatra_mountains"
+                android:src="@drawable/img_tatra_mountains"
+                app:civ_border_width="4dp"
+                app:civ_border_color="#59293D84"
+                app:civ_border_overlay="false" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/img_avt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="282dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_cirle_purle"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/img_avt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="226dp"
+                android:layout_marginBottom="90dp"
+                android:background="@drawable/background_cirle_purle"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/img_avt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="311dp"
+                android:layout_marginBottom="170dp"
+                android:background="@drawable/background_cirle_purle"
+                android:gravity="center"
+                android:src="@drawable/ic_mountain"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_tatra_mountains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#202E5C"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/layout_size"
+                android:text="Tatra Mountains"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/layout_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_black_shadow"
+                android:padding="7dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="65dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/base_text"
+                        android:text="Total Distance"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:text="20 km"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:background="@drawable/background_white"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/base_text"
+                                android:text="Height"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                android:text="1846 m"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/base_text"
+                                android:text="Length"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                android:text="4 km"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/base_text"
+                        android:text="Distance To Route"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:text="7 km"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <FrameLayout
+                        android:id="@+id/btn_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/background_white"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_map"
+                            />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:text="20 km"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

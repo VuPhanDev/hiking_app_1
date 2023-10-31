@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/menu_find"
+        android:title="Find"
+        android:icon="@drawable/ic_find" />
+    <item
+        android:id="@+id/menu_compass"
+        android:title="Compass"
+        android:icon="@drawable/ic_compass" />
+    <item
+        android:id="@+id/menu_calender"
+        android:title="Calender"
+        android:icon="@drawable/ic_calender" />
+    <item
+        android:id="@+id/menu_person"
+        android:title="Person"
+        android:icon="@drawable/ic_person" />
+</menu>

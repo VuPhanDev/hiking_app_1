@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:orientation="vertical"
+    tools:context=".bottomnav.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:id="@+id/img_logo_home"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_logo_2"
+                    android:layout_alignParentStart="true"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hike here!"
+                    android:textColor="#202E5C"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@+id/img_logo_home"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_home"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="30sp"
+                        android:text="@string/text_header_home"
+                        android:layout_marginTop="45dp"
+                        android:textSize="18sp"
+                        android:textColor="#202E5C"
+                        android:fontFamily="@font/poppins_medium"
+                        tools:ignore="UnusedAttribute" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Explore Now"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_next"
+                            android:layout_marginStart="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="30sp"
+                        android:text="Discover Trials"
+                        android:layout_marginTop="45dp"
+                        android:textSize="20sp"
+                        android:textColor="#202E5C"
+                        android:fontFamily="@font/poppins_regular"
+                        tools:ignore="UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="30sp"
+                        android:text="Reviews will help you to choose"
+                        android:textSize="12sp"
+                        android:textColor="#505050"
+                        android:fontFamily="@font/poppins_regular"
+                        tools:ignore="UnusedAttribute" />
+
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_header_home"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_luffy"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.387"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_avt_1"
+                    app:civ_border_overlay="true"
+                    android:layout_gravity="center"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#202E5C"
+                        android:lineHeight="21sp"
+                        android:text="Lisa racher"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#739088"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Mount Teresta is one of the most popular hiking destinaion in spain"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="199dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="167dp"
+                    android:layout_height="197dp"
+                    android:layout_alignParentStart="true"
+                    app:cardCornerRadius="13dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/img1" />
+                </androidx.cardview.widget.CardView>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="176dp"
+                        android:layout_height="95dp"
+                        android:layout_alignParentStart="true"
+                        app:cardCornerRadius="15dp"
+                        android:elevation="6dp"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/img2"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/img3"
+                        android:layout_alignParentBottom="true"
+                        android:scaleType="fitCenter"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+15"
+                            android:textSize="26sp"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:id="@+id/icon_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_heart"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/icon_heart"
+                    android:text="956 people liked this"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View more"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:paddingStart="7dp"
+                    android:paddingEnd="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/background_gradial"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999999"
+                android:layout_marginTop="9dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_avt_3"
+                    app:civ_border_overlay="true"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#202E5C"
+                        android:lineHeight="21sp"
+                        android:text="Rachard Harllow"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#739088"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Mount Kerino ia an active strato volicano and best place to visit"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="199dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="167dp"
+                    android:layout_height="197dp"
+                    android:layout_alignParentStart="true"
+                    app:cardCornerRadius="13dp"
+                    >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/img4" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="176dp"
+                    android:layout_height="95dp"
+                    android:layout_alignParentStart="true"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="6dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img5"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/img3"
+                        android:layout_alignParentBottom="true"
+                        android:scaleType="fitCenter"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+15"
+                            android:textSize="26sp"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="60dp"
+                >
+                <ImageView
+                    android:id="@+id/icon_heart2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_heart"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/icon_heart2"
+                    android:text="256 people liked this"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View more"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/background_gradial"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
