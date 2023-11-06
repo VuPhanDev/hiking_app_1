@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">M-Hike</string>
+    <string-array name="filter_options">
+        <item>Date</item>
+        <item>Running Time</item>
+        <item>Distance</item>
+        <item>Average Speed</item>
+        <item>Calories Burned</item>
+    </string-array>
+    <string name="google_maps_key">AIzaSyCCrzh_BWhVkHpntsml-DoZGvjvFhyVlfY</string>
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_header_home">Make your Hiking \nExperience Awesome \nwith us !!</string>
     <string name="the_tatra_m">The Tatra Mountains may not be as famous as the Swiss Alps or the Italian Dolomites, but I personally consider them as one of the best mountain ranges in Europe.\n\nMuch of the Tatra Mountains rises over 2,000m above sea level, offering experienced hikers with a multitude of challenging, diverse trails delivering incredible views - and it wont break the bank getting to, or staying in the region.\n\nThe Tatra Mountains straddle the border between Poland and Slovakia and can be approached from either country with dozens of hiking trails to choose from in the summer months. You could be roaming the trails for a month and still not do it all!</string>
+
 </resources>

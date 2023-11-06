@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu_home">
+
+    <action
+        android:id="@+id/action_global_tracking_fragment"
+        app:destination="@+id/trackingFragment"
+        app:launchSingleTop="true" />
+
+
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.animsh.runningtracker.ui.fragments.SetupFragment"
+        android:label="SetupFragment">
+        <action
+            android:id="@+id/action_setupFragment_to_runFragment"
+            app:destination="@id/runFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.animsh.runningtracker.ui.fragments.StatisticsFragment"
+        android:label="StatisticsFragment" />
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="com.animsh.runningtracker.ui.fragments.TrackingFragment"
+        android:label="TrackingFragment">
+        <action
+            android:id="@+id/action_trackingFragment_to_runFragment2"
+            app:destination="@id/runFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_person"
+        android:name="com.animsh.runningtracker.bottomnav.PersonFragment"
+        android:label="PersonFragment" />
+
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.animsh.runningtracker.bottomnav.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_menu_home_self"
+            app:destination="@id/menu_home"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_find"
+        android:name="com.animsh.runningtracker.bottomnav.FindFragment"
+        android:label="fragment_find"
+        />
+
+    <fragment
+        android:id="@+id/runFragment"
+        android:name="com.animsh.runningtracker.ui.fragments.RunFragment"
+        android:label="RunFragment">
+        <action
+            android:id="@+id/action_runFragment_to_trackingFragment2"
+            app:destination="@id/trackingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hikingDetailFragment"
+        android:name="com.animsh.runningtracker.bottomnav.HikingDetailFragment"
+        android:label="fragment_hiking_detail"
+       />
+
+    <fragment
+        android:id="@+id/menu_calender"
+        android:name="com.animsh.runningtracker.bottomnav.CalenderFragment"
+        android:label="fragment_calender" />
+
+    <fragment
+        android:id="@+id/menu_compass"
+        android:name="com.animsh.runningtracker.bottomnav.CompassFragment"
+        android:label="CompassFragment" />
+</navigation>
