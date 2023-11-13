@@ -29,11 +29,15 @@ object AppModule {
         app,
         RunningDatabase::class.java,
         RUNNING_DATABASE_NAME
-    ).build()
+    ).fallbackToDestructiveMigration().build()
 
     @Singleton
     @Provides
     fun provideEunDao(db: RunningDatabase) = db.getRunDao()
+
+    @Singleton
+    @Provides
+    fun providePostDao(db: RunningDatabase) = db.getPostDao()
 
     @Singleton
     @Provides
