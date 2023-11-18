@@ -16,7 +16,6 @@ class PostViewModel @ViewModelInject constructor(
 
     val posts = MediatorLiveData<List<Post>>()
 
-
     init {
         posts.addSource(postGetAll) { result ->
 

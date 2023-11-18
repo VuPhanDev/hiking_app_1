@@ -22,7 +22,7 @@ import kotlinx.android.synthetic.main.item_run.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-class PostAdapter :RecyclerView.Adapter<PostAdapter.PostViewHolder>(){
+class PostAdapter(private val itemClickListener: OnItemClickListener) :RecyclerView.Adapter<PostAdapter.PostViewHolder>(){
     inner class PostViewHolder(itemViewHolder: View) : RecyclerView.ViewHolder(itemViewHolder)
 
     val diffCallBack = object : DiffUtil.ItemCallback<Post>() {
@@ -57,13 +57,20 @@ class PostAdapter :RecyclerView.Adapter<PostAdapter.PostViewHolder>(){
         val post = differ.currentList[position]
         holder.itemView.apply {
             if (post.imagePath != null) {
-                Log.d("bbbbbbb", post.imagePath.toString())
                 Glide.with(this)
                     .load(post.imagePath)
                     .into(img_post)
             }
             val description = post.description
             tv_description.text = description
+
+            setOnClickListener {
+                itemClickListener.onItemClick(post)
+            }
         }
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(post: Post)
     }
 }

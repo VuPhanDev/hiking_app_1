@@ -56,7 +56,7 @@
             android:fontFamily="@font/poppins_regular"
             android:hint="John Lush, what are you thinking?"
             android:textColorHint="@color/brightGrey"
-            android:inputType="text"
+            android:inputType="textMultiLine"
             android:padding="10dp"
             android:textColor="@color/black" />
 

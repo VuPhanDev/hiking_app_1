@@ -50,7 +50,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
             .putFloat(KEY_WEIGHT, weightText.toFloat())
             .apply()
 
-        val toolBarText = "Let's Go, $nameText!"
+//        val toolBarText = "Let's Go, $nameText!"
         return true
     }
 }

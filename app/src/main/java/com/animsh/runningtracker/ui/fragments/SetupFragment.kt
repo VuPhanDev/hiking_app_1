@@ -65,7 +65,7 @@ class SetupFragment : Fragment(R.layout.fragment_setup) {
             .putBoolean(KEY_FIRST_TIME_TOGGLE, false)
             .apply()
 
-        val toolBarText = "Let's Go, $name!"
+//        val toolBarText = "Let's Go, $name!"
         return true
     }
 }

@@ -47,7 +47,18 @@
         <action
             android:id="@+id/action_menu_home_to_postFragment"
             app:destination="@id/postFragment" />
+        <action
+            android:id="@+id/action_menu_home_to_postDetailFragment"
+            app:destination="@id/postDetailFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="com.animsh.runningtracker.bottomnav.PostDetailFragment"
+        android:label="PostDetailFragment" >
+
+    </fragment>
+
     <fragment
         android:id="@+id/menu_find"
         android:name="com.animsh.runningtracker.bottomnav.FindFragment"
@@ -82,4 +93,5 @@
         android:id="@+id/postFragment"
         android:name="com.animsh.runningtracker.bottomnav.PostFragment"
         android:label="PostFragment" />
+
 </navigation>
